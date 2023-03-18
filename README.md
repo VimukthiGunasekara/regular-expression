@@ -35,16 +35,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Character Escapes
 
-## Author
-
-## 🌎 Find me around the web : 
-<img align="left" width="150" height="150" src="">
+## 🌎 Author
+<img align="left" width="150" height="150" src="Icon.gif">
 Sharing updates on
 
 <a href="https://www.linkedin.com/in/vimukthi-gunasekara/">LinkedIn</a> 💼 </br>
+<a href="https://github.com/VimukthiGunasekara">GitHub</a> 💻 </br>
 <a href="https://twitter.com/Vimu_Gunasekara">Twitter</a> 🐦 </br>
-<a href="https://about.me/VimukthiGunasekara/">AboutMe</a> 🧔 </br>
-
-Originally from my GitHub:  
-<https://github.com/VimukthiGunasekara/>
+<a href="https://www.instagram.com/vimukthi_gunasekaraa/">Instagram</a> 📷 </br>
+<a href="https://vimukthigunasekara.github.io/react-portfolio/">Portfolio</a> 🧔 </br>
 
