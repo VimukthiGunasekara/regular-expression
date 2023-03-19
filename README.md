@@ -29,6 +29,9 @@ Quantifiers in regex include ?,*, +, and items within curly braces or brackets. 
 Capturing and Grouping An easy example of capturing and grouping would be to say that you have a cat. As you consider grouping and capturing, let us use the sixth sample of a cat with his parentheses, then a regular expression will either convert the screw cat into a single character or view it as a single character, resulting in C A T being viewed as a single character.
 
 ### Bracket Expressions
+The article at the bottom of this section discusses bracket expressions in-depth, as well as explains the differences between square brackets, curly braces, and parentheses. When brackets are present, the viewer, user, or program is instructed to determine if any individual characters are similar within the brackets. With the curly braces, they do something a little bit different their job is to say or define a specific number of things to match. So, for example, you could say I want to match exactly two times this one example. In terms of parentheses, these are remembered matches. They are useful whenever you wish to do something with a particular part of a match. They can be used to reference a remembered match or a remembered portion of a match which would be useful to discuss at a later date.
+
+<a href="https://javascript.plainenglish.io/regular-expressions-brackets-f2d6f69ffe13 https://javascript.plainenglish.io/regular-expressions-brackets-f2d6f69ffe13">Link</a>
 
 ### Character Classes
 
