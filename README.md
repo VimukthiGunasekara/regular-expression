@@ -20,6 +20,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+It is possible to use anchors to describe word boundaries or lack thereof. Anchors include symbols like a caret and a dollar sign at the end of the string. Anchors are the point at which a string begins or ends. An anchor is an example of an anchor, such as a carrot and a $. Anchors are a way of telling you where you are, so basically, is that the beginning or the end? As for /A, this is the beginning of a string. If we talk about regex, it is important to note that it varies from language to language when it comes to regex. While some characters are the same across multiple languages and have the same meaning, that isn't the case for all of them, so it is important to find good references. It is important to keep an eye out for symbols or characters in the documentation that are labelled with notes that indicate that they are the same for all engines except JavaScript, for Ruby, or all of these are the same based on the language. Regular expressions have the following quantifiers: *, +, ?, {3}, {4,7}, {5,}.
 
 ### Quantifiers
 
