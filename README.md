@@ -16,6 +16,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
+- [References](#references)
 
 ## Regex Components
 
@@ -31,15 +32,31 @@ Capturing and Grouping An easy example of capturing and grouping would be to say
 ### Bracket Expressions
 The article at the bottom of this section discusses bracket expressions in-depth, as well as explains the differences between square brackets, curly braces, and parentheses. When brackets are present, the viewer, user, or program is instructed to determine if any individual characters are similar within the brackets. With the curly braces, they do something a little bit different their job is to say or define a specific number of things to match. So, for example, you could say I want to match exactly two times this one example. In terms of parentheses, these are remembered matches. They are useful whenever you wish to do something with a particular part of a match. They can be used to reference a remembered match or a remembered portion of a match which would be useful to discuss at a later date.
 
-<a href="https://javascript.plainenglish.io/regular-expressions-brackets-f2d6f69ffe13">Link</a>
+<a href="https://javascript.plainenglish.io/regular-expressions-brackets-f2d6f69ffe13">More</a>
 
 ### Character Classes
+The character class a-z or A-Z is a good example of a character class - when this is used in a regular expression, it does not just mean finding a timeframe, but rather it means searching through everything in the alphabet. So anything between A-Z could be any one of those characters, so you could use this A-Z or you could also consider numbers. There is also the possibility of using numbers.
 
 ### The OR Operator
+Using an alternative is actually a simple OR, which is represented or declared by a vertical line. For example, you would use cat|dog|bird to search for three different things, including cats, dogs, and birds. The result would be that you would request that all three of those items be searched for in groups at the same time, as well as individually.
+
+<a href="https://javascript.info/regexp-alternation">More</a>
 
 ### Flags
+As far as JavaScript is concerned, there are only six flags that are compatible with JavaScript and retro regular expressions; these are "I," which searches for casein sensitive characters. A G flag is used to locate anything outside of a specified request, a M flag makes use of a dot to match, and a character U flag allows pairs to be processed correctly. The sticky flag is used to locate a particular position.
+
+<a href="https://javascript.info/regexp-introduction">More</a>
 
 ### Character Escapes
+
+### References
+
+https://javascript.info/regexp-backreferences  </br> 
+https://javascript.info/regexp-greedy-and-lazy  </br> 
+http://www.rexegg.com/regex-anchors.html </br> 
+https://cs.lmu.edu/~ray/notes/regex/  </br>
+https://www.regular-expressions.info/lookaround.html </br>
+https://www.javascripttutorial.net/regular-expression-word-boundaries/
 
 ## 🌎 Author
 <img align="left" width="150" height="150" src="Icon.gif">
