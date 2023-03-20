@@ -4,7 +4,16 @@ An email must be matched with (([a-z0-9_/.-]+)@([da-z\.-]+)\.([a-z\.]{2,6})$/ Re
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Basically, a regular expression is a pattern describing a certain amount of text. Their name comes from the mathematical theory on which they are based. But we will not dig into that. You will usually find the name abbreviated to "regex" or "regexp". This tutorial uses "regex", because it is easy to pronounce the plural "regexes". On this website, regular expressions are shaded gray as regex.
+
+This first example is actually a perfectly valid regex. It is the most basic pattern, simply matching the literal text regex. A “match” is the piece of text, or sequence of bytes or characters that pattern was found to correspond to by the regex processing software. Matches are highlighted in blue on this site.
+
+``` 
+\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b
+``` 
+is a more complex pattern. It describes a series of letters, digits, dots, underscores, percentage signs and hyphens, followed by an at sign, followed by another series of letters, digits and hyphens, finally followed by a single dot and two or more letters. In other words: this pattern describes an email address. This also shows the syntax highlighting applied to regular expressions on this site. Word boundaries and quantifiers are blue, character classes are orange, and escaped literals are gray. You’ll see additional colors like green for grouping and purple for meta tokens later in the tutorial.
+
+With the above regular expression pattern, you can search through a text file to find email addresses, or verify if a given string looks like an email address. This tutorial uses the term “string” to indicate the text that the regular expression is applied to. This website highlights them in green. The term “string” or “character string” is used by programmers to indicate a sequence of characters. In practice, you can use regular expressions with whatever data you can access using the application or programming language you are working with.
 
 ## Table of Contents
 
@@ -15,7 +24,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
-- [Character Escapes](#character-escapes)
 - [References](#references)
 
 ## Regex Components
@@ -37,6 +45,12 @@ The article at the bottom of this section discusses bracket expressions in-depth
 ### Character Classes
 The character class a-z or A-Z is a good example of a character class - when this is used in a regular expression, it does not just mean finding a timeframe, but rather it means searching through everything in the alphabet. So anything between A-Z could be any one of those characters, so you could use this A-Z or you could also consider numbers. There is also the possibility of using numbers.
 
+Syntax for the same would be:,
+- ** \d ** - matches a single character that is a ** digit ** between 0 to 9
+- ** \w ** - matches a ** word ** character [A-Za-z0-9_]
+- ** \s ** - matches a ** whitespace ** character
+- ** \D ** - matches a ** NON-digit ** character In the case of macthing an email: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ -- \d would represents a single digit ranging from the numerical values 0 to 9 after the @ sign in email address. this string will only match a single digit such as "2", but not "22" or "12".
+
 ### The OR Operator
 Using an alternative is actually a simple OR, which is represented or declared by a vertical line. For example, you would use cat|dog|bird to search for three different things, including cats, dogs, and birds. The result would be that you would request that all three of those items be searched for in groups at the same time, as well as individually.
 
@@ -46,8 +60,6 @@ Using an alternative is actually a simple OR, which is represented or declared b
 As far as JavaScript is concerned, there are only six flags that are compatible with JavaScript and retro regular expressions; these are "I," which searches for casein sensitive characters. A G flag is used to locate anything outside of a specified request, a M flag makes use of a dot to match, and a character U flag allows pairs to be processed correctly. The sticky flag is used to locate a particular position.
 
 <a href="https://javascript.info/regexp-introduction">More</a>
-
-### Character Escapes
 
 ### References
 
